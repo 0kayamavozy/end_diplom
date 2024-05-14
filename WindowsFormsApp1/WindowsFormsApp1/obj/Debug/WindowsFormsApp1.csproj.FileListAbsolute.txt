@@ -148,3 +148,32 @@ E:\Диплом\acy express\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF
 E:\Диплом\acy express\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 E:\Диплом\acy express\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form7.resources
 E:\Диплом\acy express\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form8.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Guna.UI2.dll
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AllCity.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BuyCard.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BuyDone.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BuyLoad.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CV.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form4.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form6.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form7.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form8.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Kype.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Placsart.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.TipsHelp.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserControl1.resources
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Home\Source\Repos\end_diplom\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

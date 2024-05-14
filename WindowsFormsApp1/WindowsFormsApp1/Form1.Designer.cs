@@ -71,14 +71,10 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.guna2TrackBar3 = new Guna.UI2.WinForms.Guna2TrackBar();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.guna2TrackBar4 = new Guna.UI2.WinForms.Guna2TrackBar();
             this.button9 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -97,6 +93,12 @@
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -115,6 +117,7 @@
             this.flowLayoutPanel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -521,6 +524,7 @@
             this.guna2TrackBar1.ThumbColor = System.Drawing.Color.Red;
             this.guna2TrackBar1.Value = 150;
             this.guna2TrackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            this.guna2TrackBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.guna2TrackBar1_Scroll);
             // 
             // button6
             // 
@@ -597,6 +601,7 @@
             this.textBox13.Size = new System.Drawing.Size(71, 26);
             this.textBox13.TabIndex = 12;
             this.textBox13.Text = "час(ов)";
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // guna2TrackBar2
             // 
@@ -664,10 +669,11 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.Controls.Add(this.guna2TrackBar3);
-            this.panel13.Controls.Add(this.button8);
+            this.panel13.Controls.Add(this.textBox14);
             this.panel13.Controls.Add(this.textBox5);
             this.panel13.Controls.Add(this.textBox6);
+            this.panel13.Controls.Add(this.guna2TrackBar3);
+            this.panel13.Controls.Add(this.button8);
             this.panel13.Controls.Add(this.label3);
             this.panel13.Location = new System.Drawing.Point(3, 291);
             this.panel13.Name = "panel13";
@@ -679,14 +685,15 @@
             this.guna2TrackBar3.FillColor = System.Drawing.Color.Gainsboro;
             this.guna2TrackBar3.LargeChange = 1;
             this.guna2TrackBar3.Location = new System.Drawing.Point(16, 94);
-            this.guna2TrackBar3.Maximum = 15;
-            this.guna2TrackBar3.Minimum = 1;
+            this.guna2TrackBar3.Maximum = 23;
             this.guna2TrackBar3.MouseWheelBarPartitions = 1;
             this.guna2TrackBar3.Name = "guna2TrackBar3";
             this.guna2TrackBar3.Size = new System.Drawing.Size(214, 23);
             this.guna2TrackBar3.TabIndex = 12;
             this.guna2TrackBar3.ThumbColor = System.Drawing.Color.Red;
-            this.guna2TrackBar3.Value = 1;
+            this.guna2TrackBar3.Value = 0;
+            this.guna2TrackBar3.ValueChanged += new System.EventHandler(this.trackBar3_ValueChanged);
+            this.guna2TrackBar3.Scroll += new System.Windows.Forms.ScrollEventHandler(this.guna2TrackBar3_Scroll);
             // 
             // button8
             // 
@@ -699,29 +706,6 @@
             this.button8.Text = "▲";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.ForeColor = System.Drawing.Color.Gray;
-            this.textBox5.Location = new System.Drawing.Point(160, 60);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(70, 15);
-            this.textBox5.TabIndex = 3;
-            this.textBox5.Text = "23:00";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.ForeColor = System.Drawing.Color.Gray;
-            this.textBox6.Location = new System.Drawing.Point(20, 60);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(70, 15);
-            this.textBox6.TabIndex = 2;
-            this.textBox6.Text = "0:00";
             // 
             // label3
             // 
@@ -737,10 +721,11 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Controls.Add(this.guna2TrackBar4);
-            this.panel14.Controls.Add(this.button9);
             this.panel14.Controls.Add(this.textBox7);
             this.panel14.Controls.Add(this.textBox8);
+            this.panel14.Controls.Add(this.textBox15);
+            this.panel14.Controls.Add(this.guna2TrackBar4);
+            this.panel14.Controls.Add(this.button9);
             this.panel14.Controls.Add(this.label4);
             this.panel14.Location = new System.Drawing.Point(3, 435);
             this.panel14.Name = "panel14";
@@ -752,14 +737,14 @@
             this.guna2TrackBar4.FillColor = System.Drawing.Color.Gainsboro;
             this.guna2TrackBar4.LargeChange = 1;
             this.guna2TrackBar4.Location = new System.Drawing.Point(16, 94);
-            this.guna2TrackBar4.Maximum = 15;
-            this.guna2TrackBar4.Minimum = 1;
+            this.guna2TrackBar4.Maximum = 23;
             this.guna2TrackBar4.MouseWheelBarPartitions = 1;
             this.guna2TrackBar4.Name = "guna2TrackBar4";
             this.guna2TrackBar4.Size = new System.Drawing.Size(214, 23);
             this.guna2TrackBar4.TabIndex = 12;
             this.guna2TrackBar4.ThumbColor = System.Drawing.Color.Red;
-            this.guna2TrackBar4.Value = 1;
+            this.guna2TrackBar4.Value = 0;
+            this.guna2TrackBar4.ValueChanged += new System.EventHandler(this.trackBar4_ValueChanged);
             // 
             // button9
             // 
@@ -772,29 +757,6 @@
             this.button9.Text = "▲";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // textBox7
-            // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.ForeColor = System.Drawing.Color.Gray;
-            this.textBox7.Location = new System.Drawing.Point(160, 60);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(70, 15);
-            this.textBox7.TabIndex = 3;
-            this.textBox7.Text = "23:00";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.ForeColor = System.Drawing.Color.Gray;
-            this.textBox8.Location = new System.Drawing.Point(20, 60);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(70, 15);
-            this.textBox8.TabIndex = 2;
-            this.textBox8.Text = "0:00";
             // 
             // label4
             // 
@@ -960,7 +922,7 @@
             // 
             this.flowLayoutPanel5.AutoScroll = true;
             this.flowLayoutPanel5.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(236, 70);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(255, 242);
@@ -971,6 +933,7 @@
             // 
             this.flowLayoutPanel6.AutoScroll = true;
             this.flowLayoutPanel6.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel6.Controls.Add(this.flowLayoutPanel5);
             this.flowLayoutPanel6.Location = new System.Drawing.Point(541, 70);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(255, 242);
@@ -1000,7 +963,6 @@
             this.panel2.Controls.Add(this.flowLayoutPanel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Controls.Add(this.flowLayoutPanel5);
             this.panel2.Controls.Add(this.flowLayoutPanel2);
             this.panel2.Controls.Add(this.flowLayoutPanel3);
             this.panel2.Controls.Add(this.label7);
@@ -1014,6 +976,76 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1424, 823);
             this.panel2.TabIndex = 11;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox6.ForeColor = System.Drawing.Color.Gray;
+            this.textBox6.Location = new System.Drawing.Point(20, 53);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(24, 26);
+            this.textBox6.TabIndex = 13;
+            this.textBox6.Text = "0";
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged_1);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox5.ForeColor = System.Drawing.Color.Gray;
+            this.textBox5.Location = new System.Drawing.Point(148, 53);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(82, 26);
+            this.textBox5.TabIndex = 14;
+            this.textBox5.Text = "23 : 00";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox14.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox14.ForeColor = System.Drawing.Color.Gray;
+            this.textBox14.Location = new System.Drawing.Point(44, 53);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(71, 26);
+            this.textBox14.TabIndex = 15;
+            this.textBox14.Text = ": 00";
+            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
+            // 
+            // textBox7
+            // 
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox7.ForeColor = System.Drawing.Color.Gray;
+            this.textBox7.Location = new System.Drawing.Point(41, 56);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(71, 26);
+            this.textBox7.TabIndex = 18;
+            this.textBox7.Text = ": 00";
+            // 
+            // textBox8
+            // 
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox8.ForeColor = System.Drawing.Color.Gray;
+            this.textBox8.Location = new System.Drawing.Point(145, 56);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(82, 26);
+            this.textBox8.TabIndex = 17;
+            this.textBox8.Text = "23 : 00";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox15
+            // 
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox15.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox15.ForeColor = System.Drawing.Color.Gray;
+            this.textBox15.Location = new System.Drawing.Point(17, 56);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(24, 26);
+            this.textBox15.TabIndex = 16;
+            this.textBox15.Text = "0";
             // 
             // Form1
             // 
@@ -1053,6 +1085,7 @@
             this.flowLayoutPanel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            this.flowLayoutPanel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -1079,13 +1112,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.TextBox textBox9;
@@ -1129,6 +1158,12 @@
         private Guna.UI2.WinForms.Guna2TrackBar guna2TrackBar3;
         private Guna.UI2.WinForms.Guna2TrackBar guna2TrackBar4;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }
 

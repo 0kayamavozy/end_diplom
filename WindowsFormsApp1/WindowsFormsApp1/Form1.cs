@@ -159,13 +159,23 @@ namespace WindowsFormsApp1
         // изменение ползунка (отправлениие) фильтров
         private void trackBar3_ValueChanged(object sender, EventArgs e)
         {
-            textBox6.Text = guna2TrackBar3.Value.ToString() + ":00";
+            textBox6.Text = guna2TrackBar3.Value.ToString();
+            guna2CircleButton1.Visible = true;
+            if (guna2TrackBar3.Value == guna2TrackBar3.Minimum)
+            {
+                guna2CircleButton1.Visible = false;
+            }
         }
 
         // изменение ползунка (прибытие) фильтров
         private void trackBar4_ValueChanged(object sender, EventArgs e)
         {
-            textBox8.Text = guna2TrackBar4.Value.ToString() + ":00";
+            textBox15.Text = guna2TrackBar4.Value.ToString();
+            guna2CircleButton1.Visible = true;
+            if (guna2TrackBar4.Value == guna2TrackBar4.Minimum)
+            {
+                guna2CircleButton1.Visible = false;
+            }
         }
 
 
@@ -427,6 +437,8 @@ namespace WindowsFormsApp1
         {
             guna2TrackBar1.Value = 150;
             guna2TrackBar2.Value = guna2TrackBar2.Minimum;
+            guna2TrackBar3.Value = guna2TrackBar3.Minimum;
+            guna2TrackBar4.Value = guna2TrackBar4.Minimum;
 
             panel11.Height = 138;
             button6.Text = "▲";
@@ -505,11 +517,6 @@ namespace WindowsFormsApp1
             form7.ShowDialog();
         }
 
-        private void trackBar3_Scroll(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2TrackBar2_Scroll(object sender, ScrollEventArgs e)
         {
 
@@ -549,6 +556,31 @@ namespace WindowsFormsApp1
                     form.ShowDialog();
                 }
             }
+        }
+
+        private void guna2TrackBar3_Scroll(object sender, ScrollEventArgs e)
+        {
+            
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TrackBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged_1(object sender, EventArgs e)
+        {
+            SetTrackBar(textBox6, guna2TrackBar3);
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

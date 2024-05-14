@@ -108,5 +108,12 @@ namespace WindowsFormsApp1
             string query = "Select * from Servers";
             loadElementToCombobox(query, "ServerName", guna2ComboBox1);
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            guna2ComboBox1.Items.Clear();
+            string query = "Select * from Servers";
+            loadElementToCombobox(query, "ServerName", guna2ComboBox1);
+        }
     }
 }
